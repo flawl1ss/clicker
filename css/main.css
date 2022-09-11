@@ -1,0 +1,58 @@
+html {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.clicker__title {
+    font-size: 35px;
+    margin-top: 80px;
+    text-transform: uppercase;
+    text-align: center;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.clicker__img {
+    text-align: center;
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+    transform: translateX(-50%);
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.clicker__btn {
+    border: 2px solid #000;
+    margin: 160px auto;
+    height: 500px;
+    width: 800px;
+    text-align: center;
+    font-size: 40px;
+    display: flex;
+}
+
+.clicker__btn-txt {
+    margin: auto;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
