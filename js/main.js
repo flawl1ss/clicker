@@ -1,6 +1,25 @@
 const btn = document.querySelector('.clicker__btn')
 const txt = document.querySelector('.clicker__btn-txt')
-function CPS () {
+const timer = document.querySelector('.timer')
+
+
+function runTimer() {
+    const a = setInterval(() => {
+        timer.textContent = +timer.textContent + 1
+        if (+timer.textContent === 3) {
+            clearInterval(a)
+            btn.removeEventListener('click', CPS)
+
+        }
+
+    }, 1000)
+
+}
+
+
+btn.addEventListener('click', runTimer, { once: true })
+
+function CPS() {
     txt.textContent = +txt.textContent + 1
 }
 btn.addEventListener('click', CPS)
